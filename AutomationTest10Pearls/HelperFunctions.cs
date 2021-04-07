@@ -8,35 +8,35 @@ using System.IO;
 namespace AutomationTest10Pearls
 {
     [TestFixture]
-    public class HelperFunctions
+    internal class HelperFunctions
     {
         private static readonly string driverPath = Path.GetFullPath(Path.Combine(AppContext.BaseDirectory, "..\\..\\..\\"));
 
         private static IWebDriver driver = null;
 
-        public static IWebDriver GetDriver()
+        internal static IWebDriver GetDriver()
         {
             driver = new ChromeDriver(driverPath + "\\ChromeDriver");
             return driver;
         }
 
-        public void OpenBrowser(string url)
+        internal void OpenBrowser(string url)
         {
             var driver = GetDriver();
             driver.Navigate().GoToUrl(url);
         }
 
-        public void CloseBrowser()
+        internal void CloseBrowser()
         {
             driver.Quit();
         }
 
-        public void MaximizeBrowser()
+        internal void MaximizeBrowser()
         {
             driver.Manage().Window.Maximize();
         }
 
-        public Boolean isAttribtuePresent(IWebElement element, String attribute)
+        internal Boolean isAttribtuePresent(IWebElement element, String attribute)
         {
             Boolean result = false;
             try

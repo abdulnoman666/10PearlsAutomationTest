@@ -28,26 +28,26 @@ namespace AutomationTest10Pearls
         [Test]
         public void TestCase1()
         {
-            homePage.ClickFormsButton();
-            formPage.ClickPracticeFormButton();
-            practiceFormPage.EnterFirstName("Abdul");
-            practiceFormPage.EnterLastName("Noman");
-            practiceFormPage.ClickMaleRadioButton();
-            practiceFormPage.EnterMobile("03325155571");
-            practiceFormPage.ClickSubmitButton();
-            practiceFormPage.AssertSubmitFormResult("Thanks for submitting the form");
+            homePage.ClickFormsButtonOnHomePage();
+            formPage.ClickPracticeFormButtonOnFormsPage();
+            practiceFormPage.EnterFirstNameOnPracticeFormPage("Abdul");
+            practiceFormPage.EnterLastNameOnPracticeFormPage("Noman");
+            practiceFormPage.ClickMaleRadioButtonOnPracticeFormPage();
+            practiceFormPage.EnterMobileOnPracticeFormPage("03325155571");
+            practiceFormPage.ClickSubmitButtonOnPracticeFormPage();
+            practiceFormPage.AssertSubmitFormResultOnPracticeFormPage("Thanks for submitting the form");
 
         }
 
         [Test]
         public void TestCase2()
         {
-            homePage.ClickFormsButton();
-            formPage.ClickPracticeFormButton();
-            practiceFormPage.ClickSubmitButton();
-            practiceFormPage.AssertFirstNameAsMandatoryField();
-            practiceFormPage.AssertLastNameAsMandatoryField();
-            practiceFormPage.AssertRadioButtonAsMandatoryField();
+            homePage.ClickFormsButtonOnHomePage();
+            formPage.ClickPracticeFormButtonOnFormsPage();
+            practiceFormPage.ClickSubmitButtonOnPracticeFormPage();
+            practiceFormPage.AssertFirstNameAsMandatoryFieldOnPracticeFormPage();
+            practiceFormPage.AssertLastNameAsMandatoryFieldOnPracticeFormPage();
+            practiceFormPage.AssertRadioButtonAsMandatoryFieldOnPracticeFormPage();
         }
 
         [TearDown]

@@ -1,6 +1,6 @@
 ﻿namespace AutomationTest10Pearls.Pages.HomePage
 {
-    public partial class HomePage
+    internal partial class HomePage
     {
     }
 }

@@ -1,7 +1,7 @@
 ﻿
 namespace AutomationTest10Pearls.Pages.FormsPage
 {
-    public partial class FormsPage
+    internal partial class FormsPage
     {
     }
 }

@@ -1,9 +1,9 @@
 ﻿
 namespace AutomationTest10Pearls.Pages.FormsPage
 {
-    public partial class FormsPage
+    internal partial class FormsPage
     {
-        public void ClickPracticeFormButton()
+        internal void ClickPracticeFormButtonOnFormsPage()
         {
             HelperFunctions.ClickElement(btnPracticeForm);
         }

@@ -1,29 +1,29 @@
 ﻿namespace AutomationTest10Pearls.Pages.PracticeFormPage
 {
-    public partial class PracticeFormPage
+    internal partial class PracticeFormPage
     {
-        public void EnterFirstName(string name)
+        internal void EnterFirstNameOnPracticeFormPage(string name)
         {
             HelperFunctions.EnterValue(fldFirstName, name);
         }
 
-        public void EnterLastName(string name)
+        internal void EnterLastNameOnPracticeFormPage(string name)
         {
             HelperFunctions.EnterValue(fldLastName, name);
         }
 
-        public void ClickMaleRadioButton()
+        internal void ClickMaleRadioButtonOnPracticeFormPage()
         {
             HelperFunctions.ClickElement(rdbtnMale);
 
         }
 
-        public void EnterMobile(string number)
+        internal void EnterMobileOnPracticeFormPage(string number)
         {
             HelperFunctions.EnterValue(fldMobile,number);
         }
 
-        public void ClickSubmitButton()
+        internal void ClickSubmitButtonOnPracticeFormPage()
         {
             HelperFunctions.ClickElement(btnSubmit);
         }

@@ -2,7 +2,7 @@
 
 namespace AutomationTest10Pearls.Pages.PracticeFormPage
 {
-    public partial class PracticeFormPage
+    internal partial class PracticeFormPage
     {
         IWebElement fldFirstName => HelperFunctions.FindElement("//*[@id='firstName']", 2);
         IWebElement fldLastName => HelperFunctions.FindElement("lastName");
